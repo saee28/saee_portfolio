@@ -122,7 +122,7 @@ html{
   
 
 }
-/*.about p{
+.about p{
  font-family:"Bad Script";
  font-size: 35px;
  color: #30d4a5;
@@ -131,7 +131,7 @@ html{
  margin: 0;
  padding: 0;
 
-}*/
+}
 
 .profile-container {
   display: flex;
@@ -394,12 +394,11 @@ li{
 
 .projects {
     display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+  flex-direction: column; 
+    gap: 20px;
    max-width: 1200px;
    margin: 0 auto;
 }
-
 .project-box {
     width: 100%;
     padding: 15px;
@@ -469,7 +468,9 @@ li{
 .contact-box p {
     color: white;
     margin: 15px 0;
-    font-size: 20px;
+    font-size: 16px;
+    overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 
@@ -539,7 +540,7 @@ li{
 
     </p>
     </div>
-    <pre><code>
+    <p>
        <section id="edu">
      <h2>Education</h2>
 
@@ -622,6 +623,6 @@ li{
       <P>📍 Location:Maharashtra, India</P>
     </div>
    </section>
-    </pre></code>
+       </p>
 
 </html>
