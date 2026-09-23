@@ -83,24 +83,25 @@ html{
   position: relative;
   z-index: 3;
   color: #b3d759;
-  
+  margin: 20px auto;
   
   border-radius: 8px;
   font-family:"Bad Script";
-  max-width: 80%;
+  max-width: 90%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   margin-top: 30px;
   margin-left:100px;
   text-align: center;
   font-size: 20px;
 }
-.code-content pre code{
+.code-content p, .about p{
   font-family: Rancho;
-  font-size: 40px;
+  font-size: clamp(20px, 4vw, 35px);
   text-align: center;
-  line-height: 1;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  line-height: 1.4;
+  white-space: normal;
+  word-wrap: break-word;
+  margin: 0;
   
 
  
@@ -121,7 +122,7 @@ html{
   
 
 }
-.about pre code{
+/*.about p{
  font-family:"Bad Script";
  font-size: 35px;
  color: #30d4a5;
@@ -130,7 +131,7 @@ html{
  margin: 0;
  padding: 0;
 
-}
+}*/
 
 .profile-container {
   display: flex;
@@ -249,15 +250,15 @@ li{
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: stretch;
-  flex-direction: row;
   width: 100%;
   
 }
 .education-card{
   position: relative;
-  width: 30%;
+  width: 100%;
+  max-width: 320px;
   min-height: 190px;
   padding: 15px;
   border: 1px solid rgba(0,229,255,0.5);
@@ -515,30 +516,28 @@ li{
   <br>
   <div class="code-content">
     
-    <pre><code>
-
+    <p>
       Final-year Computer Science student with a strong interest in <br>
       web development and software engineering. Skilled in building responsive  <br>
       and user-friendly web applications using HTML, CSS, JavaScript, and modern <br>
       development tools. Passionate about learning new technologies, solving problems,  <br>
       and turning ideas into practical projects. Eager to begin a professional journey <br>
        in the software industry and contribute to real-world projects.
+</p>
 
-    </code></pre>
 
   </div>
 
      <div class="about" id="xyz">
         
          <h2>ABOUT</h2>
-    <pre><code>
-
+    <p>
          I’m a passionate Bachelor of Computer Science (BCS) student with a strong
              interest  in technology, web development, and software development
            I enjoy learning new programming concepts and turning ideas into simple,
             useful, and visually appealing projects.
 
-    </code></pre>
+    </p>
     </div>
     <pre><code>
        <section id="edu">
